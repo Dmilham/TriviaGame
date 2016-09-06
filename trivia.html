@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+    <title>Trivia Game</title>
+</head>
+<body>
+    <section id="game">
+        <div id="timerDisplay"></div>
+        <button type="button" class="btn btn-default" class="themebutton">Stop Music</button>
+        <section id="q1">
+            <h2 class="questionOne">In Minnesota it is illegal to tease what type of animal?</h2>
+            <ol id="answersOne">
+                <input type="radio" name="antiClickA" id="test"
+                    onchange="check" value="right" >  Skunk</input>
+               
+                 <input type="radio" name="antiClickA" value="wrongOne"> Goat</input>
+               
+                     <input type="radio" name="antiClickA" value="wrongTwo">   Squirrel</input>
+
+                      <input type="radio" id="answersOne" name="antiClickA" value="wrongThree"> Pigeon</input>
+            </ol>
+        </section>
+
+        <section id="q2">
+            <h2 class="questionTwo">What kind of pants  does jake from state farm wear?</h2>
+            <ol id="answersTwo">
+
+                   <input type="radio" name="antiClickB" value="wrong">  Demin</input>
+                         
+                         <input type="radio" name="antiClickB" value="wrong">  Bike Shorts</input>
+                            
+                            <input type="radio" name="antiClickB" value="right">   Khakis</input> 
+                            
+                               <input type="radio" name="antiClickB" value="wrong">  Speedos</input>
+                
+            </ol>
+        </section>
+
+        <section id="q3">
+            <h2 class="questionThree">Which planet has the shortest day of any planet in our solar system - only 9 hours and 55 minutes?</h2>
+            <ol id="answersThree"> 
+            
+                   <input type="radio" name="antiClickC" value="wrong">   Venus</input>
+
+                       <input type="radio" name="antiClickC" value="wrong">   Saturn</input>
+
+                         <input type="radio" name="antiClickC" value="right">   Jupiter</input>
+
+                           <input type="radio" name="antiClickC" value="wrong">   Uranus</input>
+            </ol>
+        </section>
+    </section>
+</body>
+</html>
