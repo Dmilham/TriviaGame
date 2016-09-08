@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
@@ -11,49 +12,70 @@
 <body>
     <section id="game">
         <div id="timerDisplay"></div>
-        <button type="button" class="btn btn-default" class="themebutton">Stop Music</button>
-        <section id="q1">
-            <h2 class="questionOne">In Minnesota it is illegal to tease what type of animal?</h2>
-            <ol id="answersOne">
-                <input type="radio" name="antiClickA" id="test"
-                    onchange="check" value="right" >  Skunk</input>
-               
-                 <input type="radio" name="antiClickA" value="wrongOne"> Goat</input>
-               
-                     <input type="radio" name="antiClickA" value="wrongTwo">   Squirrel</input>
+        
+        <button  id="pause"> 
+            <img src="assets/images/pause.png">
+        </button>
+        
+        <button id="play">
+            <img src="assets/images/play.png">
+        </button>
 
-                      <input type="radio" id="answersOne" name="antiClickA" value="wrongThree"> Pigeon</input>
+        <section id="q1">
+                
+                <h2 class="questionOne">In Minnesota it is illegal to tease what type of animal?</h2>
+
+            <ol id="answersOne">
+
+                <input class="buttons"  type="radio" name="A" value="right" >  Skunk</input>
+                
+                <input class="buttons"  type="radio" name="A" value="wrong">
+                Goat</input>
+                
+                <input class="buttons"  type="radio" name="A" value="wrong">   Squirrel</input>
+
+                <input class="buttons"  type="radio" name="A" value="wrong"> Pigeon</input>
             </ol>
         </section>
+
 
         <section id="q2">
-            <h2 class="questionTwo">What kind of pants  does jake from state farm wear?</h2>
+            <h2 class="questionTwo">What kind of pants  does Jake from state farm wear?</h2>
+
             <ol id="answersTwo">
 
-                   <input type="radio" name="antiClickB" value="wrong">  Demin</input>
-                         
-                         <input type="radio" name="antiClickB" value="wrong">  Bike Shorts</input>
-                            
-                            <input type="radio" name="antiClickB" value="right">   Khakis</input> 
-                            
-                               <input type="radio" name="antiClickB" value="wrong">  Speedos</input>
-                
-            </ol>
-        </section>
+                 <input class="buttonsTwo" type="radio" name="B" value="wrong">  Demin</input>
+             
+                 <input class="buttonsTwo" type="radio" name="B" value="wrong">  Bike Shorts</input>
+             
+                 <input class="buttonsTwo" type="radio" name="B" value="right">   Khakis</input> 
+             
+                 <input class="buttonsTwo" type="radio" name="B" value="wrong">  Speedos</input>
+             
+         </ol>
+     </section>
 
-        <section id="q3">
-            <h2 class="questionThree">Which planet has the shortest day of any planet in our solar system - only 9 hours and 55 minutes?</h2>
-            <ol id="answersThree"> 
+     <section id="q3">
+
+            <h2 class="questionThree"></h2>
+
+        <ol id="answersThree"> 
             
-                   <input type="radio" name="antiClickC" value="wrong">   Venus</input>
+             <input class="buttonsThree" type="radio" name="C" value="wrong">
+             Venus</input>
 
-                       <input type="radio" name="antiClickC" value="wrong">   Saturn</input>
+             <input class="buttonsThree" type="radio" name="C" value="wrong">
+             Saturn</input>
 
-                         <input type="radio" name="antiClickC" value="right">   Jupiter</input>
+             <input class="buttonsThree" type="radio" name="C" value="right">   Jupiter</input>
 
-                           <input type="radio" name="antiClickC" value="wrong">   Uranus</input>
-            </ol>
-        </section>
-    </section>
+             <input class="buttonsThree" type="radio" name="C" value="wrong">
+             Uranus</input>
+     </ol>
+ </section>
+</section>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
+    
 </html>

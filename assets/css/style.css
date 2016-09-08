@@ -1,5 +1,8 @@
 #game{
-
+ cursor:help;
+ cursor-color: white;
+ max-width: 1080px;
+ max-height: 920px;
 }
 
 
@@ -15,33 +18,57 @@ body{
   background-size: cover;
 }
 
+#play{
+	background-color:transparent;
+	border:none;
+	display: none;	
+}
+
+#pause{
+	background-color:transparent;
+	border: none;
+}
+
 #game{
 	margin-top:0px;
 	height: 650px;
 }
 #timerDisplay{
-	
-	font: arial black;
+	animation: blinker 1.9s ease-in infinite;
+	font: arial;
+	color:white;
 	text-align: center;
-	color: #e9ebec;
-	background: rgba(0, 35, 155, 0.4);
+	background:rgba(36,181,226, .7);
+}
+@keyframes blinker {  
+  50% { opacity: 0.0; background:grey; 
+  	color:rgba(36,181,226,1);}
 
 }
 
 #q1{
 	background: rgba(0, 35, 81, 0.4);
-	width:300px;
+	width:290px;
 	border-radius: 25px;
-	box-shadow: 10px 10px black ;
+	box-shadow: 10px 10px black;
 
+}
+input{
+	cursor:cell;
+	opacity: 0.5;
+
+}
+input:hover{
+	opacity: 0.9;
 }
 
 #answersOne{
+
 	display: inline-table;
 	font:bold;
 	font-size: 20px;
 	color:#e9ebec;
-	text-align:center;
+	text-align:left;
 
 }
 
@@ -50,12 +77,13 @@ body{
 	border-radius: 25px;
 	box-shadow: 10px 5px #3d99c4;
 	font-size: 24px;
-	    color: #e9ebec;
+	color: #e9ebec;
 	text-align: center;
 }
 
 
 #q2{
+	color:#e9ebec;
 	margin-top: -100px;
 	float: right;
 	margin-left: 450px;
@@ -83,7 +111,7 @@ body{
 }
 
 #q3{
-	margin-top: 100px;
+	margin-top: 75px;
 	float: left;
 	background: rgba(0, 65, 81, 0.7);
 	width:450px;
@@ -106,6 +134,15 @@ body{
 	color:#e9ebec;
 	font-size: 20px;
 	text-align:center;
-
 }
+@media screen and  (max-width: 768px){
+	#q1{
+		width:450px;
+		float:clearboth;
+		margin-bottom:150px;
 
+	}
+	#q2{
+		margin-bottom: -500px;
+
+	}
