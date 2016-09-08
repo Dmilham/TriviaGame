@@ -28,7 +28,7 @@ $(".questionTwo").html("What kind of pants  does Jake from state farm wear?");
 $(".questionThree").html("Which planet has the shortest day of any planet in our solar system - only 9 hours and 55 minutes?");
 
 // Variables================================================================================================================================================
-var number = (1 * 5);
+var number = (1 * 21);
 var correct = 0;
 var incorrect = 0;
 var valueright="right"
